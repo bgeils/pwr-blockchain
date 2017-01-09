@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buy Order</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+
+  <button id="back" onclick="backHome()">Home</button>
+  <h2>Purchase Order</h2>
+  <br>
+<!--   <br><label for="1">Start Time:</label><input type="datetime-local" id="startTime" step="5"></input> -->
+<span id = "orders" >
+    <br><label for="2">Watts:</label><input type="number" id="wattHours" value="2000"></input>
+<!--     <br><label for="3">Duration (hrs):</label><input type="number" id="duration" value="2"></input> -->
+    <br><button id="send" onclick="submitPurchase()">Submit Purchase</button>
+    <br><br>
+
+</span>
+  <h2 id = "buystatus"> Referenced Order</h2>
+  <h3>Order Num: <span class="black"><span id="order-num"></span></span></h3>
+  <h3>Start Time: <span class="black"><span id="stime"></span></span></h3>
+  <h3>Watts: <span class="black"><span id="wh"></span> W</span></h3>
+  <h3>Duration: <span class="black"><span id="d"></span> hr(s)</span></h3>
+  <h3>Price: <span class="black"><span id="p"></span> Euros</span></h3>
+</body>
+</html>

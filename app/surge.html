@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PWR</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h2>User Control Panel</h2>
+  <h3>You have <span class="black"><span id="balance"></span> PWR Tokens</span></h3>
+  <h3>Your Address <span class="black"><span id="address">not a user</span></span></h3>
+  <span id="status"></span>
+  <br><br>
+
+
+
+  <!-- SEND -->
+  <h2><a href="#" onclick="toggle_visibility('send-div');">Send PWR Tokens</a></h2>
+  <div id="send-div">
+    <br><label for="amount">Amount:</label><input type="text" id="amount" placeholder="e.g., 95"></input>
+    <br><label for="receiver">To Address:</label><input type="text" id="receiver" placeholder="e.g., 0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"></input>
+    <br><br><button id="send" onclick="sendCoin()">Send PWR Tokens</button>
+    <br><br>
+  </div>
+
+  <!-- SELL ORDER -->
+  <h2><a href="#" onclick="toggle_visibility('sell-order-div');">Create Sell Order</a></h2>
+  <div id="sell-order-div">
+    <br><label for="start_time">Start Time:</label><input type="datetime-local" id="startTime" step="5"></input>
+    <br><label for="watt_hours">Watts:</label><input type="number" id="wattHours" value="2000"></input>
+    <br><label for="duration">Duration (hrs):</label><input type="number" id="duration" value="2"></input>
+    <br><label for="duration">Price:</label><input type="number" id="price" value="0.20"></input>
+    <br><br><button id="createSellOrder" onclick="gotoSellOrder()">Create Sell Order</button>
+    <br><br>
+  </div>
+
+  <h2><a href="#" onclick="viewSellOrders()">View Orders</a></h2>
+
+
+
+
+</body>
+</html>

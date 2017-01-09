@@ -1,0 +1,115 @@
+body {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color:inherit;
+  text-decoration: none;
+}
+label {
+  display: inline-block;
+  width: 120px;
+}
+
+input {
+  width: 500px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+        border-radius: 50px;
+    border: 3px solid #000;
+    color: #fff;
+    overflow: hidden;
+
+    /*border: none;*/
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 15px 50px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+h1, h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #AAA;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: normal;
+  color: #AAA;
+  font-size: 24px;
+}
+
+.black {
+  color: black;
+}
+
+#balance {
+  color: black;
+}
+
+#send-div{
+
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+}
+
+#sell-order-div{
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 200;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.header{
+  font-weight: 200 !important;
+  font-size: 18pt;
+}
+
+#small{
+  padding: 5px 10px;
+}
