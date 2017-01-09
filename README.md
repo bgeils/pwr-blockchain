@@ -18,7 +18,7 @@ $ testrpc
 ```
 In another bash shell:
 ```
-$ cd ~/surge
+$ cd ~/pwr-blockchain
 $ truffle compile
 $ truffle migrate
 $ truffle build
